@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const typed = new Typed('.typing-effect', {
         strings: [
-            'Desenvolvedor Full Stack',
-            'Especialista em Web Development',
-            'Entusiasta de C# e Windows Apps',
-            'Autodidata e Criativo'
+            'Desenvolvedor Certificado de Front-End',
+            'Estudante de Análise e Desenvolvimento de Sistemas',
+            'Entusiasta de C# e Windows Apps e Segurança da Informação',
+            'Interesse em resolução de problemas e Debug/Reverse Engineering'
         ],
         typeSpeed: 50,
         backSpeed: 30,

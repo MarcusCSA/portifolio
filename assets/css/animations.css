@@ -18,7 +18,10 @@
 }
 
 .cta-button {
-    animation: pulse 2s infinite;
+    /* pulse effect only on first appearance, not infinite */
+    animation: pulse 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes pulse {
