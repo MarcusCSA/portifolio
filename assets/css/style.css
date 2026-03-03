@@ -1,10 +1,12 @@
 :root {
-    --discord-dark: #36393F;
-    --discord-light: #7289DA;
-    --discord-white: #FFFFFF;
-    --discord-gray: #99AAB5;
-    --discord-darker: #2F3136;
+    --bg-dark: #0b0c10;
+    --bg-darker: #000000;
+    --accent: #39ff14;
+    --accent-alt: #45a29e;
+    --text-light: #ffffff;
+    --text: #c5c6c7;
 }
+
 
 * {
     margin: 0;
@@ -13,9 +15,9 @@
 }
 
 body {
-    font-family: 'Whitney', 'Helvetica Neue', sans-serif;
-    background-color: var(--discord-dark);
-    color: var(--discord-white);
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     line-height: 1.6;
 }
 
@@ -23,8 +25,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height: auto;
     padding: 1rem 2rem;
-    background-color: var(--discord-darker);
+    background-color: var(--bg-darker);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,13 +41,13 @@ body {
 }
 
 .nav-menu a {
-    color: var(--discord-white);
+    color: var(--text-light);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
-    color: var(--discord-light);
+    color: var(--accent);
 }
 
 .hero-section {
@@ -54,6 +57,9 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 2rem;
+    background-color: var(--bg-dark);
+    background-image: linear-gradient(0deg, rgba(57,255,20,0.06) 1px, transparent 1px);
+    background-size: 100% 20px;
 }
 
 .hero-content h1 {
@@ -62,14 +68,14 @@ body {
 }
 
 .highlight {
-    color: var(--discord-light);
+    color: var(--accent);
 }
 
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: var(--discord-light);
-    color: var(--discord-white);
+    background-color: var(--accent);
+    color: var(--text-light);
     text-decoration: none;
     border-radius: 4px;
     margin-top: 2rem;
@@ -78,12 +84,12 @@ body {
 
 .cta-button:hover {
     transform: translateY(-2px);
-    background-color: #5f73bc;
+    background-color: var(--accent-alt);
 }
 
 .about-section {
     padding: 6rem 2rem;
-    background-color: var(--discord-darker);
+    background-color: var(--bg-darker);
 }
 
 .container {
@@ -95,7 +101,7 @@ body {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: var(--discord-light);
+    color: var(--accent);
 }
 
 .about-content {
@@ -111,8 +117,8 @@ body {
     margin: 0 auto 2rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid var(--discord-light);
-    background-color: var(--discord-darker);
+    border: 4px solid var(--accent);
+    background-color: var(--bg-darker);
 }
 
 .avatar {
@@ -129,11 +135,11 @@ body {
 .about-text p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: var(--discord-gray);
+    color: var(--text);
 }
 
 .skills-container {
-    background-color: var(--discord-dark);
+    background-color: var(--bg-dark);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -141,7 +147,7 @@ body {
 
 .skills-container h3 {
     margin-bottom: 2rem;
-    color: var(--discord-light);
+    color: var(--accent);
 }
 
 .skill-item {
@@ -155,16 +161,16 @@ body {
 }
 
 .skill-name {
-    color: var(--discord-white);
+    color: var(--text-light);
 }
 
 .skill-percentage {
-    color: var(--discord-light);
+    color: var(--accent);
 }
 
 .skill-bar {
     height: 10px;
-    background-color: var(--discord-darker);
+    background-color: var(--bg-darker);
     border-radius: 5px;
     overflow: hidden;
     position: relative;
@@ -172,7 +178,7 @@ body {
 
 .skill-progress {
     height: 100%;
-    background-color: var(--discord-light);
+    background-color: var(--accent);
     border-radius: 5px;
     position: relative;
     width: 0;
@@ -183,7 +189,7 @@ body {
     position: absolute;
     right: 10px;
     top: -25px;
-    color: var(--discord-white);
+    color: var(--text-light);
     font-size: 1.2rem;
 }
 
@@ -204,7 +210,7 @@ body {
 
 .projects-section {
     padding: 6rem 2rem;
-    background-color: var(--discord-dark);
+    background-color: var(--bg-dark);
 }
 
 .projects-grid {
@@ -215,7 +221,7 @@ body {
 }
 
 .project-card {
-    background-color: var(--discord-darker);
+    background-color: var(--bg-darker);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -249,12 +255,12 @@ body {
 }
 
 .project-content h3 {
-    color: var(--discord-light);
+    color: var(--accent);
     margin-bottom: 0.5rem;
 }
 
 .project-content p {
-    color: var(--discord-gray);
+    color: var(--text);
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
@@ -277,12 +283,12 @@ body {
 
 .project-link.github {
     background-color: #24292e;
-    color: var(--discord-white);
+    color: var(--text-light);
 }
 
 .project-link.demo {
-    background-color: var(--discord-light);
-    color: var(--discord-white);
+    background-color: var(--accent);
+    color: var(--text-light);
 }
 
 .project-link:hover {
@@ -298,7 +304,7 @@ body {
 
 .contact-section {
     padding: 6rem 2rem;
-    background-color: var(--discord-darker);
+    background-color: var(--bg-darker);
 }
 
 .contact-content {
@@ -308,7 +314,7 @@ body {
 }
 
 .contact-info {
-    background-color: var(--discord-dark);
+    background-color: var(--bg-dark);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -321,17 +327,17 @@ body {
 
 .contact-item i {
     font-size: 2rem;
-    color: var(--discord-light);
+    color: var(--accent);
     margin-bottom: 1rem;
 }
 
 .contact-item h3 {
-    color: var(--discord-white);
+    color: var(--text-light);
     margin-bottom: 0.5rem;
 }
 
 .contact-item p {
-    color: var(--discord-gray);
+    color: var(--text);
 }
 
 .social-links {
@@ -342,18 +348,18 @@ body {
 }
 
 .social-link {
-    color: var(--discord-white);
+    color: var(--text-light);
     font-size: 1.5rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-link:hover {
-    color: var(--discord-light);
+    color: var(--accent);
     transform: translateY(-3px);
 }
 
 .contact-form {
-    background-color: var(--discord-dark);
+    background-color: var(--bg-dark);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -368,12 +374,10 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    background-color: var(--discord-darker);
+    background-color: var(--bg-darker);
     border: 2px solid transparent;
     border-radius: 4px;
-    color: var(--discord-white);
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
+    color: var(--text-light);
 }
 
 .form-group textarea {
@@ -385,15 +389,14 @@ body {
     position: absolute;
     left: 1rem;
     top: 1rem;
-    color: var(--discord-gray);
+    color: var(--text);
     transition: all 0.3s ease;
     pointer-events: none;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: var(--discord-light);
-    outline: none;
+    border-color: var(--accent);
 }
 
 .form-group input:focus + label,
@@ -403,7 +406,7 @@ body {
     top: -0.5rem;
     left: 0.5rem;
     font-size: 0.8rem;
-    background-color: var(--discord-dark);
+    background-color: var(--bg-dark);
     padding: 0 0.5rem;
 }
 
@@ -414,8 +417,8 @@ body {
     gap: 0.5rem;
     width: 100%;
     padding: 1rem;
-    background-color: var(--discord-light);
-    color: var(--discord-white);
+    background-color: var(--accent);
+    color: var(--text-light);
     border: none;
     border-radius: 4px;
     font-size: 1rem;
@@ -424,11 +427,11 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #5f73bc;
+    background-color: var(--accent-alt);
 }
 
 .footer {
-    background-color: var(--discord-darker);
+    background-color: var(--bg-darker);
     padding: 2rem;
     text-align: center;
 }
@@ -441,13 +444,13 @@ body {
 }
 
 .footer-links a {
-    color: var(--discord-gray);
+    color: var(--text);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: var(--discord-light);
+    color: var(--accent);
 }
 
 /* responsividade completa */
@@ -480,7 +483,7 @@ body {
         right: -100%;
         width: 70%;
         height: 100vh;
-        background-color: var(--discord-darker);
+        background-color: var(--bg-darker);
         padding: 2rem;
         transition: right 0.3s ease;
     }
@@ -519,7 +522,7 @@ body {
 
 .logo-img {
     height: 60px;
-    width: auto;
+    width: 75px;
     object-fit: contain;
     filter: brightness(1.1);
     border-radius: 20%;

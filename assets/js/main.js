@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         strings: [
             'Desenvolvedor Certificado de Front-End',
             'Estudante de Análise e Desenvolvimento de Sistemas',
-            'Entusiasta de C# e Windows Apps e Segurança da Informação',
+            'Entusiasta em Cybersegurança e C# / Windows Apps',
             'Interesse em resolução de problemas e Debug/Reverse Engineering'
         ],
         typeSpeed: 50,
